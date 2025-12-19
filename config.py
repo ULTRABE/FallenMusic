@@ -14,6 +14,8 @@ DURATION_LIMIT = int(getenv("DURATION_LIMIT", "90"))
 
 OWNER_ID = int(getenv("OWNER_ID"))
 
+SESSION = getenv("SESSION")
+
 STRING_SESSION = getenv("STRING_SESSION")
 
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "")
