@@ -3,7 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
+API_ID = int(getenv("API_ID") or 0)
+if API_ID == 0:
+    raise RuntimeError("API_ID is missing from environment variables")
 API_HASH = getenv("API_HASH")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
