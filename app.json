@@ -1,4 +1,3 @@
-I have updated your app.json file with all the specific variables you provided. I also noticed you had a MongoDB URL and a Logger ID, so I added those to the environment section to ensure the bot functions correctly.
 {
     "name": "Savita x Music",
     "description": "A VC Player Bot for telegram videochats, written in Python with Pyrogram and Py-Tgcalls.",
@@ -71,7 +70,3 @@ I have updated your app.json file with all the specific variables you provided. 
     ],
     "stack": "container"
 }
-
-Important Note on MongoDB:
-In the code above, the MONGO_DB_URI still contains <db_password>. You will need to replace that specific part with the actual password you created in your MongoDB dashboard for that user, otherwise, the bot won't be able to connect to the database.
-Would you like me to show you how to set these up as environment variables directly in the Heroku dashboard instead of using this file?
